@@ -8,7 +8,7 @@ const Navbar = () => {
   const cart = useSelector((state) => state.cart);
   return (
     <nav>
-      <h1>Dashboard</h1>
+      <h1 data-testid="navbartst">Dashboard</h1>
       <h2>Cart - {cart.count}</h2>
       <Link to="/bots/cart">
         <button>
